@@ -41,16 +41,6 @@ namespace ConsolePoolIoCDI
         }
 
         /// <summary>
-        /// 解析(抽象與實體方法、屬性相同時用)
-        /// </summary>
-        /// <typeparam name="TAbstractType"></typeparam>
-        /// <returns></returns>
-        public static TAbstractType Resolve<TAbstractType>()
-        {
-            return Resolve<TAbstractType, TAbstractType>();
-        }
-
-        /// <summary>
         /// 解析(實體方法、變數多於抽象時使用)
         /// </summary>
         /// <typeparam name="TAbstractType"></typeparam>
